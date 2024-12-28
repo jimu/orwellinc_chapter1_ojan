@@ -1,0 +1,23 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainStyle.uss?fileID=7433441132597879392&amp;guid=654f6aa8b3ac34845bab4c6261dad949&amp;type=3#MainStyle" />
+    <engine:VisualElement style="-unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/Ubuntu-Bold.ttf?fileID=12800000&amp;guid=85d146659baaa6f47a3f374e701087ab&amp;type=3#Ubuntu-Bold&quot;);">
+        <engine:Label text="Orwell Janitor" name="Title" class="title" />
+        <engine:Button text="Scavage" name="ScavageButton" class="button" />
+        <engine:GroupBox style="flex-direction: row;">
+            <engine:Label text="Nuts" name="NutsLabel" class="label" style="flex-direction: column; width: 50%; align-self: auto; align-items: auto; -unity-text-align: upper-right; align-content: auto;" />
+            <engine:Label text="0 nuts" name="NutsValue" data-source="project://database/Assets/DataObject.asset?fileID=11400000&amp;guid=9632be0dbbacccf4c800bc27c0e15848&amp;type=2#DataObject" data-source-path="nuts" class="value" style="width: 50%;">
+                <Bindings>
+                    <engine:DataBinding property="text" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:GroupBox>
+        <engine:GroupBox style="flex-direction: row; justify-content: space-between;">
+            <engine:Label text="Bolts" name="BoltsLabel" class="label" style="-unity-text-align: upper-right; width: 50%;" />
+            <engine:Label text="0 Bolts" name="BoltsValue" data-source="project://database/Assets/DataObject.asset?fileID=11400000&amp;guid=9632be0dbbacccf4c800bc27c0e15848&amp;type=2#DataObject" data-source-path="bolts" class="value" style="align-self: flex-end; width: 50%;">
+                <Bindings>
+                    <engine:DataBinding property="text" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:GroupBox>
+    </engine:VisualElement>
+</engine:UXML>
